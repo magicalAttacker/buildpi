@@ -1,13 +1,13 @@
-name: "Build Armbian OP"
+name: "Build Armbian"
 on:
   workflow_dispatch:
 jobs:
   build-armbian:
     runs-on: ubuntu-latest
     steps:
-      - uses: armbian/build@v24.11.0-trunk.197
+      - uses: armbian/build@main
         with:
           armbian_token:     "${{ secrets.GITHUB_TOKEN }}"  # GitHub token
           armbian_release:   "jammy"                        # userspace
           armbian_target:    "build"                        # build=image, kernel=kernel
-          armbian_board:     "orangepi5-plus"               # build target
+          armbian_board:     "bananapim5"                   # build target
