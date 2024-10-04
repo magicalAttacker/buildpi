@@ -1,4 +1,4 @@
-name: "Rebuild Armbian"
+name: "Build PI Ora"
 author: "https://github.com/armbian"
 description: "Build Armbian Linux"
 inputs:
